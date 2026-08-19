@@ -1,0 +1,44 @@
+name: 部署網站
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - 'web/**'
+      - '.github/workflows/pages.yml'
+  # 每日更新那支是用內建 GITHUB_TOKEN 推 commit 的，
+  # 這種 commit 不會觸發 push 事件（GitHub 防迴圈的設計），
+  # 所以要靠 workflow_run 接在它後面，否則資料更新了網站卻不會重新部署。
+  workflow_run:
+    workflows: ['每日更新券資料']
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同時只部署一份；新的來了就取消排隊中的舊的
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # 更新那支失敗時不要部署（那代表閘門沒放行，資料沒動，白跑一趟）
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web            # 只發布 web/，scraper 與原始資料不進網站
+      - id: deploy
+        uses: actions/deploy-pages@v4

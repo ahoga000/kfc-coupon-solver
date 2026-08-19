@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 除錯用的原始 API 回應
+data/raw/
+data/gather.log
+debug.log

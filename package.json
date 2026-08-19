@@ -1,0 +1,15 @@
+{
+  "name": "kfc-coupon-solver",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "肯德基優惠券湊單計算器 — 輸入想吃什麼, 算出最便宜的優惠券組合",
+  "scripts": {
+    "test": "vitest run",
+    "serve": "py -3.10 -m http.server 8731 --directory web",
+    "refresh": "py -3.10 -u scripts/gather.py && py -3.10 -u scripts/build_taxonomy.py"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
+}

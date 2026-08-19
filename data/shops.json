@@ -1,0 +1,348 @@
+{
+ "shops": [
+  {
+   "code": "TWI100",
+   "name": "台南西門二餐廳(數位未來店)(小北成功夜市旁)",
+   "city": "台南市",
+   "area": "北區",
+   "breakfast": true,
+   "opening": "每日08:00-24:00"
+  },
+  {
+   "code": "TWI103",
+   "name": "台北南京東二餐廳(數位未來店)(南京三民捷運站2號)",
+   "city": "台北市",
+   "area": "松山區",
+   "breakfast": true,
+   "opening": "每日08:00-23:00"
+  },
+  {
+   "code": "TWI104",
+   "name": "台北雙連餐廳(雙連捷運站2號)",
+   "city": "台北市",
+   "area": "中山區",
+   "breakfast": true,
+   "opening": "每日08:00-24:00"
+  },
+  {
+   "code": "TWI105",
+   "name": "板橋新埔餐廳(數位未來店)(新埔捷運站1號出口)",
+   "city": "新北市",
+   "area": "板橋區",
+   "breakfast": true,
+   "opening": "每日08:00-24:00"
+  },
+  {
+   "code": "TWI108",
+   "name": "南投草屯餐廳",
+   "city": "南投縣",
+   "area": "草屯鎮",
+   "breakfast": false,
+   "opening": "週一-週五10:00~23:00 週六-週日9:00~23:00"
+  },
+  {
+   "code": "TWI110",
+   "name": "屏東自由餐廳",
+   "city": "屏東縣",
+   "area": "屏東市",
+   "breakfast": false,
+   "opening": "每日09:00-24:00"
+  },
+  {
+   "code": "TWI115",
+   "name": "新莊幸福餐廳",
+   "city": "新北市",
+   "area": "新莊區",
+   "breakfast": false,
+   "opening": "週一-週五10:00-23:00、 週六-週日09:00-23:00"
+  },
+  {
+   "code": "TWI119",
+   "name": "三峽北大餐廳(台北大學)",
+   "city": "新北市",
+   "area": "三峽區",
+   "breakfast": false,
+   "opening": "週一-週五10:00-23:00、 週六-週日09:00-23:00"
+  },
+  {
+   "code": "TWI120",
+   "name": "台北莊敬餐廳",
+   "city": "台北市",
+   "area": "信義區",
+   "breakfast": false,
+   "opening": "週一-週五10:00-23:00、 週六-週日09:00-23:00"
+  },
+  {
+   "code": "TWI125",
+   "name": "彰化鹿港餐廳(老街附近)",
+   "city": "彰化縣",
+   "area": "鹿港鎮",
+   "breakfast": false,
+   "opening": "週一-週五10:00-22:00、週六-週日09:00-22:00"
+  },
+  {
+   "code": "TWI126",
+   "name": "土城金城餐廳(土城看守所旁)",
+   "city": "新北市",
+   "area": "土城區",
+   "breakfast": false,
+   "opening": "週一-週五10:00-23:00、 週六-週日09:00-23:00"
+  },
+  {
+   "code": "TWI127",
+   "name": "斗六民生餐廳",
+   "city": "雲林縣",
+   "area": "斗六市",
+   "breakfast": false,
+   "opening": "週一-週五10:00~23:00、週六-週日09:30~23:00"
+  },
+  {
+   "code": "TWI128",
+   "name": "泰山明志餐廳",
+   "city": "新北市",
+   "area": "泰山區",
+   "breakfast": false,
+   "opening": "週一-週五10:30-23:00 週六-週日10:00-23:00"
+  },
+  {
+   "code": "TWI129",
+   "name": "汐止中興餐廳",
+   "city": "新北市",
+   "area": "汐止區",
+   "breakfast": false,
+   "opening": "每日10:00-23:00"
+  },
+  {
+   "code": "TWI131",
+   "name": "台中潭子餐廳(勝利十三街口)",
+   "city": "台中市",
+   "area": "潭子區",
+   "breakfast": false,
+   "opening": "每日10:00-23:00"
+  },
+  {
+   "code": "TWI132",
+   "name": "台中後車站餐廳(靠近新時代商場)",
+   "city": "台中市",
+   "area": "東區",
+   "breakfast": false,
+   "opening": "每日11:00-22:30"
+  },
+  {
+   "code": "TWI133",
+   "name": "新竹新豐餐廳(數位未來店)(明新科大附近)",
+   "city": "新竹縣",
+   "area": "新豐鄉",
+   "breakfast": false,
+   "opening": "每日10:00~23:00"
+  },
+  {
+   "code": "TWI134",
+   "name": "文山興隆餐廳(近萬芳醫院捷運站)",
+   "city": "台北市",
+   "area": "文山區",
+   "breakfast": false,
+   "opening": "每日10:30-22:30"
+  },
+  {
+   "code": "TWI135",
+   "name": "台北南港餐廳(內用暫不開放)",
+   "city": "台北市",
+   "area": "南港區",
+   "breakfast": false,
+   "opening": "每日10:00-22:00"
+  },
+  {
+   "code": "TWI136",
+   "name": "大里中興二餐廳",
+   "city": "台中市",
+   "area": "大里區",
+   "breakfast": false,
+   "opening": "週一-週五10:00-23:00、 週六-週日09:00-23:00"
+  },
+  {
+   "code": "TWI137",
+   "name": "桃園大園餐廳(大園農會對面)",
+   "city": "桃園市",
+   "area": "大園區",
+   "breakfast": false,
+   "opening": "每日10:00~23:00"
+  },
+  {
+   "code": "TWI138",
+   "name": "羅東興東餐廳(羅東鎮公所)",
+   "city": "宜蘭縣",
+   "area": "羅東鎮",
+   "breakfast": false,
+   "opening": "每日10:00~23:00"
+  },
+  {
+   "code": "TWI139",
+   "name": "台南善化餐廳(數位未來店)",
+   "city": "台南市",
+   "area": "善化區",
+   "breakfast": false,
+   "opening": "每日09:30~23:00"
+  },
+  {
+   "code": "TWI140",
+   "name": "宜蘭舊城餐廳(中山公園前)",
+   "city": "宜蘭縣",
+   "area": "宜蘭市",
+   "breakfast": false,
+   "opening": "週一-週五10:00-23:00、 週六09:00-24:00、 週日09:00-23:00"
+  },
+  {
+   "code": "TWI141",
+   "name": "汐止大同餐廳(汐止國中對面)",
+   "city": "新北市",
+   "area": "汐止區",
+   "breakfast": false,
+   "opening": "每日10:00-22:00"
+  },
+  {
+   "code": "TWI142",
+   "name": "桃園桃鶯餐廳(櫻珍飯店對面)",
+   "city": "桃園市",
+   "area": "桃園區",
+   "breakfast": false,
+   "opening": "每日10:00~23:00"
+  },
+  {
+   "code": "TWI143",
+   "name": "台南海佃餐廳(國安街文賢菜市場對面)",
+   "city": "台南市",
+   "area": "安南區",
+   "breakfast": false,
+   "opening": "週日-週四10:00-23:00 週五-週六10:00-24:00"
+  },
+  {
+   "code": "TWI144",
+   "name": "竹北自強餐廳(寶雅旁)",
+   "city": "新竹縣",
+   "area": "竹北市",
+   "breakfast": false,
+   "opening": "每日10:00-23:00"
+  },
+  {
+   "code": "TWI145",
+   "name": "台北萬大餐廳",
+   "city": "台北市",
+   "area": "萬華區",
+   "breakfast": false,
+   "opening": "每日10:30-23:00"
+  },
+  {
+   "code": "TWI146",
+   "name": "台北八德餐廳(數位未來店)(光華商場)",
+   "city": "台北市",
+   "area": "中正區",
+   "breakfast": false,
+   "opening": "每日10:00~22:00"
+  },
+  {
+   "code": "TWI147",
+   "name": "高雄文化餐廳(五福國中旁)",
+   "city": "高雄市",
+   "area": "苓雅區",
+   "breakfast": false,
+   "opening": "週一-週五10:00-23:00、 週六-週日09:00-23:00"
+  },
+  {
+   "code": "TWI148",
+   "name": "南投南崗餐廳",
+   "city": "南投縣",
+   "area": "南投市",
+   "breakfast": false,
+   "opening": "週一-週五10:00~22:00 週六-週日9:00~22:00"
+  },
+  {
+   "code": "TWI149",
+   "name": "板橋中山二餐廳(數位未來店)(近府中捷運站)",
+   "city": "新北市",
+   "area": "板橋區",
+   "breakfast": false,
+   "opening": "每日10:00~23:00"
+  },
+  {
+   "code": "TWI150",
+   "name": "台南成大餐廳(成功大學旁)",
+   "city": "台南市",
+   "area": "東區",
+   "breakfast": false,
+   "opening": "每日11:00-22:00"
+  },
+  {
+   "code": "TWI151",
+   "name": "永和中山餐廳(樂華夜市旁)",
+   "city": "新北市",
+   "area": "永和區",
+   "breakfast": false,
+   "opening": "每日10:00~23:00"
+  },
+  {
+   "code": "TWI152",
+   "name": "新莊輔大餐廳(近輔仁大學)",
+   "city": "新北市",
+   "area": "新莊區",
+   "breakfast": false,
+   "opening": "每日10:30-23:00"
+  },
+  {
+   "code": "TWI153",
+   "name": "天母中山餐廳(美國學校)",
+   "city": "台北市",
+   "area": "士林區",
+   "breakfast": false,
+   "opening": "每日10:00-22:00"
+  },
+  {
+   "code": "TWI154",
+   "name": "新竹清大餐廳",
+   "city": "新竹市",
+   "area": "東區",
+   "breakfast": false,
+   "opening": "每日10:00-22:00"
+  },
+  {
+   "code": "TWI155",
+   "name": "文山木柵餐廳(近文山區行政中心)",
+   "city": "台北市",
+   "area": "文山區",
+   "breakfast": false,
+   "opening": "每日10:30-22:00"
+  },
+  {
+   "code": "TWI156",
+   "name": "高雄後昌餐廳(數位未來店)(右昌消防隊斜對面)",
+   "city": "高雄市",
+   "area": "楠梓區",
+   "breakfast": false,
+   "opening": "週一-週五10:00-23:00、 週六-週日09:00-23:00"
+  },
+  {
+   "code": "TWI158",
+   "name": "台南金華餐廳",
+   "city": "台南市",
+   "area": "南區",
+   "breakfast": false,
+   "opening": "週一-週五10:00~23:00、週六-週日09:30~23:00"
+  },
+  {
+   "code": "TWI159",
+   "name": "台中站前餐廳(靠近綠川&繼光街)",
+   "city": "台中市",
+   "area": "中區",
+   "breakfast": false,
+   "opening": "每日 10:30-22:00"
+  },
+  {
+   "code": "TWI160",
+   "name": "士林文昌餐廳",
+   "city": "台北市",
+   "area": "士林區",
+   "breakfast": false,
+   "opening": "每日10:00~23:00"
+  }
+ ]
+}

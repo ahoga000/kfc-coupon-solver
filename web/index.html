@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>肯德基優惠券哪張划算</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --surface-2: #f0efec;
+    --line: #dcdad4;
+    --text: #1c1b19;
+    --text-dim: #6b6862;
+    --accent: #1c1b19;
+    --price-good: #0f7b4f;   /* 飽和色只留給價格語意 */
+    --price-bad: #b3261e;
+    --radius: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --surface: #211f1d;
+      --surface-2: #2b2926;
+      --line: #3a3733;
+      --text: #f0eee9;
+      --text-dim: #a19c94;
+      --accent: #f0eee9;
+      --price-good: #4ade9a;
+      --price-bad: #ff8a80;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC",
+          "Microsoft JhengHei", sans-serif;
+    padding: 0 0 48px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 16px; }
+
+  header { padding: 20px 0 12px; }
+  h1 { font-size: 1.35rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .meta { font-size: 0.8rem; color: var(--text-dim); }
+  .meta.stale { color: var(--price-bad); font-weight: 600; }
+
+  section { margin-top: 22px; }
+  h2 {
+    font-size: 0.95rem; margin: 0 0 10px; color: var(--text-dim); font-weight: 600;
+  }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 14px;
+  }
+
+  .row { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
+  .row.period { margin: 12px 0 4px; font-size: 0.88rem; flex-wrap: wrap; }
+  .row.period label { color: var(--text-dim); }
+  input[type=text] {
+    font: inherit; padding: 9px 11px; border: 1px solid var(--line);
+    border-radius: 9px; background: var(--surface); color: var(--text);
+    flex: 1; min-width: 0;
+  }
+  input[type=number] {
+    font: inherit; font-size: 0.88rem; padding: 7px 9px; width: 76px;
+    border: 1px solid var(--line); border-radius: 9px;
+    background: var(--surface); color: var(--text);
+  }
+  .row.period .prefix { color: var(--text-dim); margin-right: -4px; }
+  select {
+    font: inherit; font-size: 0.88rem; padding: 7px 9px; border: 1px solid var(--line);
+    border-radius: 9px; background: var(--surface); color: var(--text);
+  }
+  input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  button {
+    font: inherit; cursor: pointer; border-radius: 9px; border: 1px solid var(--line);
+    background: var(--surface-2); color: var(--text); padding: 9px 13px;
+  }
+  button:hover { border-color: var(--accent); }
+  .icon-btn { padding: 8px 11px; line-height: 1; }
+  .primary {
+    background: var(--accent); color: var(--bg); border-color: var(--accent);
+    width: 100%; padding: 13px; font-weight: 700; font-size: 1.02rem; margin-top: 4px;
+  }
+  .linkish {
+    background: none; border: none; padding: 2px 0; color: var(--text-dim);
+    text-decoration: underline; font-size: 0.82rem;
+  }
+
+  /* --- 快捷按鈕 --- */
+  h3 {
+    font-size: 0.82rem; color: var(--text-dim); font-weight: 600;
+    margin: 16px 0 8px;
+  }
+  .quick { display: flex; flex-wrap: wrap; gap: 8px; }
+  .quick button {
+    padding: 10px 16px; font-size: 0.95rem; font-weight: 600;
+    border-radius: 999px; background: var(--surface); border: 1px solid var(--line);
+  }
+  .quick button[aria-pressed="true"] {
+    background: var(--accent); color: var(--bg); border-color: var(--accent);
+  }
+  .hint { font-size: 0.76rem; color: var(--text-dim); margin-top: 8px; }
+  details.other { margin-top: 10px; }
+  details.other > summary {
+    font-size: 0.82rem; color: var(--text-dim); cursor: pointer; padding: 4px 0;
+  }
+  details.other > summary + * { margin-top: 8px; }
+
+  .matches { margin: 2px 0 12px; font-size: 0.84rem; }
+  .matches summary { color: var(--text-dim); cursor: pointer; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px;
+    border: 1px solid var(--line); border-radius: 999px; background: var(--surface-2);
+    font-size: 0.8rem; cursor: pointer; user-select: none;
+  }
+  .chip input { margin: 0; accent-color: var(--accent); }
+  .chip.off { opacity: 0.45; }
+  .nomatch { color: var(--price-bad); font-size: 0.88rem; }
+
+  /* --- 排行卡片 --- */
+  .rank-card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 14px; margin-bottom: 10px;
+  }
+  .rank-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+  .rank-no {
+    flex: none; width: 22px; height: 22px; border-radius: 50%;
+    background: var(--accent); color: var(--bg);
+    font-size: 0.75rem; font-weight: 700; display: grid; place-items: center;
+  }
+  .code {
+    font: 700 1.2rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.06em; padding: 5px 9px; border-radius: 8px;
+    background: var(--surface-2); border: 1px solid var(--line);
+  }
+  .pick-name { font-weight: 600; }
+  .badge {
+    font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;
+    background: var(--surface-2); border: 1px solid var(--line); color: var(--text-dim);
+  }
+  /* 命中的類別: 比 badge 明顯, 一眼看得出這張券是為了哪一類上榜 */
+  .tag {
+    font-size: 0.74rem; font-weight: 700; padding: 2px 9px; border-radius: 999px;
+    background: var(--accent); color: var(--bg);
+  }
+
+  .unit { font-size: 1.7rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+  .price-line { font-size: 0.88rem; margin-top: 2px; }
+  .price-line .dim { color: var(--text-dim); }
+  .saved { color: var(--price-good); font-weight: 700; }
+
+  .got { font-size: 0.9rem; margin-top: 8px; }
+  .extra, .same { font-size: 0.84rem; color: var(--text-dim); margin-top: 4px; }
+  .expiry { font-size: 0.84rem; color: var(--text-dim); margin-top: 4px; }
+  .expiry.soon { color: var(--price-bad); font-weight: 600; }
+  .same { padding-top: 6px; border-top: 1px dashed var(--line); margin-top: 8px; }
+
+  details.notes { margin-top: 8px; }
+  details.notes summary { font-size: 0.8rem; color: var(--text-dim); cursor: pointer; }
+  .note { font-size: 0.78rem; color: var(--text-dim); margin-top: 6px; white-space: pre-wrap; }
+  details.more > summary { font-size: 0.88rem; color: var(--text-dim); cursor: pointer; padding: 6px 0; }
+
+  footer { margin-top: 28px; font-size: 0.78rem; color: var(--text-dim); }
+  footer li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>肯德基優惠券哪張划算</h1>
+    <div class="meta" id="meta">載入資料中…</div>
+  </header>
+
+  <section>
+    <h2>想吃什麼</h2>
+    <div class="card">
+      <div class="quick" id="quickItems"></div>
+      <div class="hint">可以複選，含<strong>任一項</strong>的券會排在同一張榜上</div>
+      <details class="other">
+        <summary>其他（自己打字）</summary>
+        <div id="rows"></div>
+        <button class="linkish" id="addRow">＋ 再加一種</button>
+      </details>
+
+      <h3>價格帶</h3>
+      <div class="quick" id="quickBands"></div>
+
+      <div class="row period">
+        <label for="period">時段</label>
+        <select id="period">
+          <option value="2">早餐以外</option>
+          <option value="1">早餐時段</option>
+          <option value="">不限</option>
+        </select>
+        <span class="meta" id="periodHint"></span>
+      </div>
+      <button class="primary" id="calc">找最便宜的券</button>
+    </div>
+  </section>
+
+  <div id="out"></div>
+
+  <footer>
+    <ul>
+      <li>排序看的是<strong>總價由低到高</strong>。價格帶互不重疊，$200 以下大致就是一個人吃的份量，想幫全家買選「$201 以上」。</li>
+      <li>每張券也標了<strong>每份單價</strong>，可以順便看划不划算——單價低的通常是多人份大包裝。</li>
+      <li>只列出<strong>今天還在效期內</strong>的券；原價與折扣率取自肯德基官方文案，沒寫的就留白不猜。</li>
+      <li>券的內容與價格直接來自肯德基線上訂餐系統，但<strong>門市可能不同</strong>（目前查的是 <span id="shop">—</span>）。</li>
+      <li>部分券有<strong>餐期、內用外帶</strong>等限制，每張券的原始說明都可以展開看，點餐前請看一眼。</li>
+    </ul>
+  </footer>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

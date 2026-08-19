@@ -1,0 +1,101 @@
+name: 每日更新券資料
+
+on:
+  schedule:
+    # 16:30 UTC = 台灣時間隔天 00:30。每天一次就好 —— 一輪要打 5000+ 次 API，
+    # 對別人的伺服器客氣一點，而且券的內容一天內幾乎不會變。
+    - cron: '30 16 * * *'
+  workflow_dispatch:        # 也可以手動觸發
+    inputs:
+      full_scan:
+        description: '強制全掃（連已知無效的代碼一起重驗）'
+        type: boolean
+        default: false
+
+# 同時只跑一份，避免上一輪還沒跑完就又開一輪
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  # 每天固定打幾千次，比手動偶爾跑要更保守一點（本機預設 0.25）
+  KFC_REQUEST_INTERVAL: '0.6'
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    # 週五全掃約 5500 次呼叫 × 0.6s ≈ 55 分鐘，留點餘裕
+    timeout-minutes: 120
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests
+
+      # 平日只驗「已知有效」的那批（約 440 個代碼），週五做全掃。
+      # 因為 invalid_codes.txt 會讓已標記無效的代碼被跳過 —— 新上架的券如果剛好
+      # 用到以前無效的代碼，不全掃就永遠撿不到。
+      - name: 決定今天要不要全掃
+        id: mode
+        run: |
+          if [ "$(date -u -d '+8 hours' +%u)" = "5" ] || [ "${{ inputs.full_scan }}" = "true" ]; then
+            echo "full=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "full=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 補新的候選代碼（只在全掃日）
+        if: steps.mode.outputs.full == 'true'
+        continue-on-error: true      # 懶人包網站掛掉不該讓整輪失敗
+        run: python -u scripts/collect_seeds.py
+
+      - name: 抓券資料
+        id: gather
+        # exit 2 = 被擋了。這不是「壞掉」而是「今天先算了」，
+        # 所以不讓整個 job 紅掉，交給後面的閘門決定要不要更新。
+        run: |
+          set +e
+          if [ "${{ steps.mode.outputs.full }}" = "true" ]; then
+            python -u scripts/gather.py --recheck
+          else
+            python -u scripts/gather.py
+          fi
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          if [ "$code" = "2" ]; then
+            echo "::warning::被擋或中途中止，改由閘門判斷是否仍可上線"
+            exit 0
+          fi
+          exit $code
+
+      - name: 正規化成候選檔
+        run: python -u scripts/build_taxonomy.py --out /tmp/candidate.json
+
+      - name: 閘門檢查（不合格就不覆蓋現有資料）
+        run: python -u scripts/publish_guard.py /tmp/candidate.json web/solver_data.json
+
+      - name: Commit
+        run: |
+          if git diff --quiet -- web/solver_data.json; then
+            echo "資料沒變，不 commit"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/solver_data.json data/coupons.json data/invalid_codes.txt \
+                  data/taxonomy_audit.txt data/seed_codes.txt
+          git commit -m "chore: 更新券資料 ($(date -u -d '+8 hours' +%Y-%m-%d))"
+          git push
+
+      - name: 失敗時留下線索
+        if: failure()
+        run: |
+          echo "::error::更新失敗。網站仍在跑，只是資料日期停在上一次成功的時間。"
+          echo "gather exit code: ${{ steps.gather.outputs.exit_code }}"

@@ -12,6 +12,8 @@ on:
   workflow_run:
     workflows: ['每日更新券資料']
     types: [completed]
+  # 手動觸發留著是有原因的: 建立分支的那次 push, GitHub 不會套用上面的 path filter,
+  # 所以 repo 第一次推上去時這支不會自動跑, 網站要靠手動 (或下一次改到 web/) 才生得出來。
   workflow_dispatch:
 
 permissions:

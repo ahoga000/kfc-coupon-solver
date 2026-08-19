@@ -1,7 +1,11 @@
 # 肯德基優惠券哪張划算
 
+**→ https://ahoga000.github.io/kfc-coupon-solver/**
+
 點兩下（想吃什麼 + 價格帶），列出**該價格帶裡最便宜的 3 張優惠券**。不疊券——每一筆就是單獨
 一張券，拿代碼去點就好。
+
+本站與台灣肯德基／Yum! Brands 無任何關聯，未取得授權，也不是官方服務。
 
 ```
 想吃什麼   [堡] [炸雞] [蛋撻] [飲料]              ← 可複選，「或」的關係
@@ -85,6 +89,21 @@ npm test                        # 排行與最佳化演算法
 平日只驗「已知有效」的那批（約 440 個代碼），**週五做全掃**。
 因為 `data/invalid_codes.txt` 會讓已標記無效的代碼被跳過 —— 新上架的券如果剛好用到
 以前無效的代碼，不全掃就永遠撿不到。全掃日也會順便重跑 `collect_seeds.py` 補新代碼。
+
+### 第一次推上 GitHub 會踩的兩個坑
+
+先決條件：`Settings` → `Pages` → Source 要選 **GitHub Actions**（我們的 workflow 沒帶
+自動啟用參數），`Settings` → `Actions` → Workflow permissions 要是 **Read and write**
+（每日更新那支要把新資料 commit 回 repo）。然後：
+
+1. **建立分支的那次 push，GitHub 不套用 path filter。** `pages.yml` 設定成只有 `web/**`
+   有變動才跑，所以 repo 首推時它一個 run 都不會產生 —— 網站生不出來。
+2. **只有 `schedule` / `workflow_dispatch` 的 workflow，首推後不會被登記。**
+   Actions 清單裡看不到，連 `Run workflow` 按鈕都沒有，等於排程永遠不會跑。
+
+兩個都靠「動到那個檔案再 push 一次」解決。症狀很容易被誤判成「Actions 被關掉了」，
+用公開 API 就能分辨：`/actions/workflows` 回 0、但 `github.com/<owner>/<repo>/actions`
+回 200 就代表 Actions 是開著的（被關掉時那頁是 404）。
 
 ### 出問題時會怎樣（這是重點）
 

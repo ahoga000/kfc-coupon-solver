@@ -5,6 +5,8 @@ on:
     # 16:30 UTC = 台灣時間隔天 00:30。每天一次就好 —— 一輪要打 5000+ 次 API，
     # 對別人的伺服器客氣一點，而且券的內容一天內幾乎不會變。
     - cron: '30 16 * * *'
+  # 注意: 這支沒有 push 觸發, 所以 repo 剛推上去時 GitHub 不會把它登記起來
+  # (workflow 清單與 Run workflow 按鈕都不會出現)。要靠一次「動到本檔案」的 push 叫醒它。
   workflow_dispatch:        # 也可以手動觸發
     inputs:
       full_scan:

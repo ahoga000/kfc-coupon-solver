@@ -54,6 +54,10 @@ npm run refresh
 npm run serve      # -> http://localhost:8731/
 ```
 
+手機要連同一台電腦看的話用 `http://<電腦的區網 IP>:8731/`。`serve` 一定要帶 `--bind 0.0.0.0`
+—— 不帶的話 Python 在 Windows 上會挑到 IPv6 (`::`)，而 Windows 的 IPv6 socket 預設
+`IPV6_V6ONLY=1`，結果是**本機用 localhost 看起來一切正常，手機卻完全連不上**。
+
 `web/` 是自成一包的靜態網站，可以直接丟到任何靜態主機。
 
 **改完前端記得 ctrl+shift+r 硬重載**，`http.server` 的快取會讓你看到舊版還以為沒生效。

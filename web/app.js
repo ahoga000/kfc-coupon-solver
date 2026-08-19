@@ -147,7 +147,8 @@ function addRow(keyword = '') {
 
 function renderCard(r, place, today, tags = []) {
   const head = el('div', { className: 'rank-head' }, [
-    el('span', { className: 'rank-no', textContent: String(place) }),
+    // 只有第 1 名帶 top (上品牌色), 2/3 名維持描邊 —— 三個都紅就分不出名次
+    el('span', { className: place === 1 ? 'rank-no top' : 'rank-no', textContent: String(place) }),
     el('span', { className: 'code', textContent: r.code }),
     el('span', { className: 'pick-name', textContent: r.name }),
   ]);

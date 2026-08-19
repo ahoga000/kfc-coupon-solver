@@ -3,19 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#e4002b">
 <title>肯德基優惠券哪張划算</title>
 <style>
   :root {
-    --bg: #f6f6f4;
+    --bg: #f7f6f3;
     --surface: #ffffff;
-    --surface-2: #f0efec;
-    --line: #dcdad4;
+    --surface-2: #f1efea;
+    --line: #e6e3dc;
     --text: #1c1b19;
     --text-dim: #6b6862;
-    --accent: #1c1b19;
+
+    /* 品牌層。紅色只用在這三處: 標題列 / 選中態 / 主按鈕 */
+    --brand: #e4002b;        /* 填色 */
+    --brand-ink: #ffffff;    /* 疊在填色上的字 */
+    --brand-text: #c4001f;   /* 當文字或邊框用, 要跟頁面底色有對比 */
+    --brand-soft: #fdeaed;   /* 品牌色的淡底 */
+
+    /* 代碼方塊 —— 使用者唯一要唸給店員聽的東西, 卡片上第二顯眼 */
+    --code-bg: #17161a;
+    --code-ink: #ffffff;
+
     --price-good: #0f7b4f;   /* 飽和色只留給價格語意 */
-    --price-bad: #b3261e;
-    --radius: 12px;
+    /* 警示刻意不用紅: 品牌紅一鋪開, 同頁再出現另一種紅就分不出「識別色」還是「警告」 */
+    --warn: #b45309;
+
+    --radius: 16px;
+    --shadow: 0 1px 2px rgba(28,27,25,.06), 0 6px 16px rgba(28,27,25,.05);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -25,9 +39,18 @@
       --line: #3a3733;
       --text: #f0eee9;
       --text-dim: #a19c94;
-      --accent: #f0eee9;
+
+      --brand: #c8001f;      /* 深色底下整條亮紅會刺眼, 壓深一階 */
+      --brand-ink: #ffffff;
+      --brand-text: #ff6b7a;
+      --brand-soft: #3a1a20;
+
+      --code-bg: #000000;
+      --code-ink: #ffffff;
+
       --price-good: #4ade9a;
-      --price-bad: #ff8a80;
+      --warn: #f0a95c;
+      --shadow: none;
     }
   }
 
@@ -40,10 +63,20 @@
   }
   .wrap { max-width: 680px; margin: 0 auto; padding: 0 16px; }
 
-  header { padding: 20px 0 12px; }
-  h1 { font-size: 1.35rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  /* 滿版出血的紅色標題列 —— 手機上就是 App navbar 的樣子 */
+  .topbar {
+    background: var(--brand); color: var(--brand-ink);
+    padding: 18px 0 16px; margin-bottom: 4px;
+  }
+  .topbar h1 { font-size: 1.4rem; margin: 0 0 5px; letter-spacing: -0.01em; }
+  .topbar .meta { color: rgba(255,255,255,.9); }
+  /* 白字疊在紅底上對比不夠, 壓一層黑底當成警示徽章 */
+  .topbar .meta.stale {
+    color: #fff; font-weight: 700; background: rgba(0,0,0,.3);
+    padding: 5px 9px; border-radius: 8px; display: inline-block; margin-top: 2px;
+  }
   .meta { font-size: 0.8rem; color: var(--text-dim); }
-  .meta.stale { color: var(--price-bad); font-weight: 600; }
+  .meta.stale { color: var(--warn); font-weight: 600; }
 
   section { margin-top: 22px; }
   h2 {
@@ -52,130 +85,152 @@
 
   .card {
     background: var(--surface); border: 1px solid var(--line);
-    border-radius: var(--radius); padding: 14px;
+    border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow);
   }
 
   .row { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
-  .row.period { margin: 12px 0 4px; font-size: 0.88rem; flex-wrap: wrap; }
+  .row.period { margin: 14px 0 4px; font-size: 0.88rem; flex-wrap: wrap; }
   .row.period label { color: var(--text-dim); }
   input[type=text] {
-    font: inherit; padding: 9px 11px; border: 1px solid var(--line);
-    border-radius: 9px; background: var(--surface); color: var(--text);
+    font: inherit; padding: 11px 13px; min-height: 44px;
+    border: 1px solid var(--line); border-radius: 11px;
+    background: var(--surface); color: var(--text);
     flex: 1; min-width: 0;
   }
   input[type=number] {
-    font: inherit; font-size: 0.88rem; padding: 7px 9px; width: 76px;
-    border: 1px solid var(--line); border-radius: 9px;
+    font: inherit; font-size: 0.88rem; padding: 7px 9px; width: 76px; min-height: 44px;
+    border: 1px solid var(--line); border-radius: 11px;
     background: var(--surface); color: var(--text);
   }
   .row.period .prefix { color: var(--text-dim); margin-right: -4px; }
   select {
-    font: inherit; font-size: 0.88rem; padding: 7px 9px; border: 1px solid var(--line);
-    border-radius: 9px; background: var(--surface); color: var(--text);
+    font: inherit; font-size: 0.9rem; padding: 7px 10px; min-height: 44px;
+    border: 1px solid var(--line); border-radius: 11px;
+    background: var(--surface); color: var(--text);
   }
-  input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  input:focus-visible, select:focus-visible, button:focus-visible {
+    outline: 2px solid var(--brand-text); outline-offset: 2px;
+  }
 
   button {
-    font: inherit; cursor: pointer; border-radius: 9px; border: 1px solid var(--line);
+    font: inherit; cursor: pointer; border-radius: 11px; border: 1px solid var(--line);
     background: var(--surface-2); color: var(--text); padding: 9px 13px;
   }
-  button:hover { border-color: var(--accent); }
-  .icon-btn { padding: 8px 11px; line-height: 1; }
+  button:hover { border-color: var(--brand-text); }
+  /* 44px = 手指點得到的最小尺寸 */
+  .icon-btn { padding: 8px 11px; line-height: 1; min-width: 44px; min-height: 44px; }
   .primary {
-    background: var(--accent); color: var(--bg); border-color: var(--accent);
-    width: 100%; padding: 13px; font-weight: 700; font-size: 1.02rem; margin-top: 4px;
+    background: var(--brand); color: var(--brand-ink); border-color: var(--brand);
+    width: 100%; padding: 14px; min-height: 48px;
+    font-weight: 700; font-size: 1.02rem; margin-top: 6px;
   }
+  .primary:hover { border-color: var(--brand); filter: brightness(1.08); }
   .linkish {
-    background: none; border: none; padding: 2px 0; color: var(--text-dim);
-    text-decoration: underline; font-size: 0.82rem;
+    background: none; border: none; padding: 6px 0; color: var(--text-dim);
+    text-decoration: underline; font-size: 0.82rem; min-height: 0;
   }
+  .linkish:hover { border-color: transparent; color: var(--brand-text); }
 
   /* --- 快捷按鈕 --- */
   h3 {
     font-size: 0.82rem; color: var(--text-dim); font-weight: 600;
-    margin: 16px 0 8px;
+    margin: 18px 0 8px;
   }
   .quick { display: flex; flex-wrap: wrap; gap: 8px; }
   .quick button {
-    padding: 10px 16px; font-size: 0.95rem; font-weight: 600;
+    padding: 11px 18px; min-height: 44px; font-size: 0.95rem; font-weight: 600;
     border-radius: 999px; background: var(--surface); border: 1px solid var(--line);
   }
   .quick button[aria-pressed="true"] {
-    background: var(--accent); color: var(--bg); border-color: var(--accent);
+    background: var(--brand); color: var(--brand-ink); border-color: var(--brand);
   }
-  .hint { font-size: 0.76rem; color: var(--text-dim); margin-top: 8px; }
+  .hint { font-size: 0.76rem; color: var(--text-dim); margin-top: 10px; }
   details.other { margin-top: 10px; }
   details.other > summary {
-    font-size: 0.82rem; color: var(--text-dim); cursor: pointer; padding: 4px 0;
+    font-size: 0.82rem; color: var(--text-dim); cursor: pointer; padding: 6px 0;
   }
   details.other > summary + * { margin-top: 8px; }
 
   .matches { margin: 2px 0 12px; font-size: 0.84rem; }
-  .matches summary { color: var(--text-dim); cursor: pointer; }
+  .matches summary { color: var(--text-dim); cursor: pointer; padding: 4px 0; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
   .chip {
-    display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px;
+    display: inline-flex; align-items: center; gap: 5px; padding: 6px 10px;
     border: 1px solid var(--line); border-radius: 999px; background: var(--surface-2);
     font-size: 0.8rem; cursor: pointer; user-select: none;
   }
-  .chip input { margin: 0; accent-color: var(--accent); }
+  .chip input { margin: 0; accent-color: var(--brand); }
   .chip.off { opacity: 0.45; }
-  .nomatch { color: var(--price-bad); font-size: 0.88rem; }
+  .nomatch { color: var(--warn); font-size: 0.88rem; }
 
   /* --- 排行卡片 --- */
   .rank-card {
     background: var(--surface); border: 1px solid var(--line);
-    border-radius: var(--radius); padding: 14px; margin-bottom: 10px;
+    border-radius: var(--radius); padding: 16px; margin-bottom: 12px;
+    box-shadow: var(--shadow);
   }
-  .rank-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+  .rank-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
   .rank-no {
-    flex: none; width: 22px; height: 22px; border-radius: 50%;
-    background: var(--accent); color: var(--bg);
-    font-size: 0.75rem; font-weight: 700; display: grid; place-items: center;
+    flex: none; width: 24px; height: 24px; border-radius: 50%;
+    background: transparent; color: var(--text-dim); border: 1.5px solid var(--line);
+    font-size: 0.78rem; font-weight: 700; display: grid; place-items: center;
+  }
+  /* 只有第 1 名上品牌色 —— 三個都紅的話「第一名」就沒有意義了 */
+  .rank-no.top {
+    background: var(--brand); color: var(--brand-ink); border-color: var(--brand);
   }
   .code {
-    font: 700 1.2rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
-    letter-spacing: 0.06em; padding: 5px 9px; border-radius: 8px;
-    background: var(--surface-2); border: 1px solid var(--line);
+    font: 800 1.35rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.08em; padding: 8px 11px; border-radius: 10px;
+    background: var(--code-bg); color: var(--code-ink); border: none;
   }
   .pick-name { font-weight: 600; }
   .badge {
-    font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;
+    font-size: 0.72rem; padding: 3px 9px; border-radius: 999px;
     background: var(--surface-2); border: 1px solid var(--line); color: var(--text-dim);
   }
   /* 命中的類別: 比 badge 明顯, 一眼看得出這張券是為了哪一類上榜 */
   .tag {
-    font-size: 0.74rem; font-weight: 700; padding: 2px 9px; border-radius: 999px;
-    background: var(--accent); color: var(--bg);
+    font-size: 0.74rem; font-weight: 700; padding: 3px 10px; border-radius: 999px;
+    background: var(--brand-soft); color: var(--brand-text);
+    border: 1px solid var(--brand-soft);
   }
 
-  .unit { font-size: 1.7rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
-  .price-line { font-size: 0.88rem; margin-top: 2px; }
+  .unit { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+  .price-line { font-size: 0.88rem; margin-top: 3px; }
   .price-line .dim { color: var(--text-dim); }
   .saved { color: var(--price-good); font-weight: 700; }
 
-  .got { font-size: 0.9rem; margin-top: 8px; }
+  .got { font-size: 0.9rem; margin-top: 10px; }
   .extra, .same { font-size: 0.84rem; color: var(--text-dim); margin-top: 4px; }
-  .expiry { font-size: 0.84rem; color: var(--text-dim); margin-top: 4px; }
-  .expiry.soon { color: var(--price-bad); font-weight: 600; }
-  .same { padding-top: 6px; border-top: 1px dashed var(--line); margin-top: 8px; }
+  .expiry { font-size: 0.84rem; color: var(--text-dim); margin-top: 6px; }
+  .expiry.soon { color: var(--warn); font-weight: 600; }
+  .same { padding-top: 8px; border-top: 1px dashed var(--line); margin-top: 10px; }
 
-  details.notes { margin-top: 8px; }
-  details.notes summary { font-size: 0.8rem; color: var(--text-dim); cursor: pointer; }
+  details.notes { margin-top: 10px; }
+  details.notes summary { font-size: 0.8rem; color: var(--text-dim); cursor: pointer; padding: 4px 0; }
   .note { font-size: 0.78rem; color: var(--text-dim); margin-top: 6px; white-space: pre-wrap; }
-  details.more > summary { font-size: 0.88rem; color: var(--text-dim); cursor: pointer; padding: 6px 0; }
+  details.more > summary { font-size: 0.88rem; color: var(--text-dim); cursor: pointer; padding: 8px 0; }
 
-  footer { margin-top: 28px; font-size: 0.78rem; color: var(--text-dim); }
+  footer { margin-top: 32px; font-size: 0.78rem; color: var(--text-dim); }
   footer li { margin-bottom: 4px; }
+  .disclaimer {
+    margin-top: 16px; padding: 12px 14px; border-radius: 12px;
+    background: var(--surface-2); border: 1px solid var(--line);
+    line-height: 1.65;
+  }
+  .disclaimer strong { color: var(--text); }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
+<header class="topbar">
+  <div class="wrap">
     <h1>肯德基優惠券哪張划算</h1>
     <div class="meta" id="meta">載入資料中…</div>
-  </header>
+  </div>
+</header>
 
+<div class="wrap">
   <section>
     <h2>想吃什麼</h2>
     <div class="card">
@@ -213,6 +268,10 @@
       <li>券的內容與價格直接來自肯德基線上訂餐系統，但<strong>門市可能不同</strong>（目前查的是 <span id="shop">—</span>）。</li>
       <li>部分券有<strong>餐期、內用外帶</strong>等限制，每張券的原始說明都可以展開看，點餐前請看一眼。</li>
     </ul>
+    <div class="disclaimer">
+      <strong>本站為個人製作，與台灣肯德基／Yum! Brands 無任何關聯</strong>，未取得授權，也不是官方服務。
+      券的內容、價格與適用條件<strong>一律以店內與官方公告為準</strong>；本站資料可能有誤或未即時更新。
+    </div>
   </footer>
 </div>
 <script type="module" src="./app.js"></script>

@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "version": "0.1.0",
-  "description": "肯德基優惠券湊單計算器 — 輸入想吃什麼, 算出最便宜的優惠券組合",
+  "description": "點兩下（想吃什麼 + 價格帶）, 列出該價格帶裡最便宜的 3 張肯德基優惠券",
   "scripts": {
     "test": "vitest run",
     "serve": "py -3.10 -m http.server 8731 --bind 0.0.0.0 --directory web",

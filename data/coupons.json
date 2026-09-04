@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-04T04:37:49+08:00",
+ "fetched_at": "2026-09-05T03:50:51+08:00",
  "shop_code": "TWI104",
  "shop_name": "台北雙連餐廳(雙連捷運站2號)",
  "order_type": "2",
@@ -997,6 +997,10 @@
      "title": "沾醬自由配",
      "count": 0,
      "options": [
+      {
+       "name": "青花椒香麻沾醬(小)",
+       "add_price": 12
+      },
       {
        "name": "南洋酸甜醬(大)",
        "add_price": 16
@@ -2291,6 +2295,10 @@
      "title": "沾醬自由配",
      "count": 0,
      "options": [
+      {
+       "name": "青花椒香麻沾醬(小)",
+       "add_price": 12
+      },
       {
        "name": "南洋酸甜醬(大)",
        "add_price": 16
@@ -8072,6 +8080,10 @@
      "count": 0,
      "options": [
       {
+       "name": "青花椒香麻沾醬(小)",
+       "add_price": 12
+      },
+      {
        "name": "南洋酸甜醬(大)",
        "add_price": 16
       },
@@ -8132,6 +8144,10 @@
      "title": "沾醬自由配",
      "count": 0,
      "options": [
+      {
+       "name": "青花椒香麻沾醬(小)",
+       "add_price": 12
+      },
       {
        "name": "南洋酸甜醬(大)",
        "add_price": 16
@@ -8197,6 +8213,10 @@
      "title": "沾醬自由配",
      "count": 0,
      "options": [
+      {
+       "name": "青花椒香麻沾醬(小)",
+       "add_price": 12
+      },
       {
        "name": "南洋酸甜醬(大)",
        "add_price": 16
@@ -8314,6 +8334,10 @@
      "title": "沾醬自由配",
      "count": 0,
      "options": [
+      {
+       "name": "青花椒香麻沾醬(小)",
+       "add_price": 12
+      },
       {
        "name": "南洋酸甜醬(大)",
        "add_price": 16
@@ -16104,6 +16128,10 @@
      "title": "沾醬自由配",
      "count": 0,
      "options": [
+      {
+       "name": "青花椒香麻沾醬(小)",
+       "add_price": 12
+      },
       {
        "name": "南洋酸甜醬(大)",
        "add_price": 16
@@ -36543,6 +36571,10 @@
      "title": "沾醬自由配",
      "count": 0,
      "options": [
+      {
+       "name": "青花椒香麻沾醬(小)",
+       "add_price": 12
+      },
       {
        "name": "南洋酸甜醬(大)",
        "add_price": 16

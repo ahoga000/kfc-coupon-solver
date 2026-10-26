@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-26T04:07:24+08:00",
+ "fetched_at": "2026-10-27T06:03:56+08:00",
  "shop_code": "TWI104",
  "shop_name": "台北雙連餐廳(雙連捷運站2號)",
  "order_type": "2",
@@ -2380,11 +2380,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -5332,11 +5340,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -5448,11 +5464,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -5529,11 +5553,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -7212,11 +7244,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -7355,11 +7395,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -7490,11 +7538,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -7625,11 +7681,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -8164,11 +8228,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -9249,11 +9321,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -12487,11 +12567,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -12751,11 +12839,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -12946,11 +13042,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -13573,11 +13677,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -14247,11 +14359,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -14495,11 +14615,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -14745,11 +14873,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -14880,11 +15016,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -15317,11 +15461,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -15565,11 +15717,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -16786,11 +16946,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -17346,11 +17514,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -17481,11 +17657,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -20573,11 +20757,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -21413,11 +21605,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -22079,11 +22279,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -22772,11 +22980,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -23105,11 +23321,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -26486,11 +26710,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -26635,11 +26867,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -27339,11 +27579,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -27772,11 +28020,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -28280,11 +28536,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -28653,11 +28917,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -29542,11 +29814,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -31805,11 +32085,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -32290,11 +32578,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -32868,11 +33164,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -33006,11 +33310,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -33239,11 +33551,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -33600,11 +33920,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -34272,11 +34600,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -34683,11 +35019,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -34856,11 +35200,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -35218,11 +35570,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -35381,11 +35741,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -35907,11 +36275,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -36195,11 +36571,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -36522,11 +36906,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -36708,11 +37100,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -36936,11 +37336,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -37289,11 +37697,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -37413,11 +37829,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -37474,11 +37898,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -38036,11 +38468,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -38107,11 +38547,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -38412,11 +38860,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -38626,11 +39082,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -39269,11 +39733,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -39962,11 +40434,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -40172,11 +40652,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -40399,11 +40887,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -41310,11 +41806,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -41463,11 +41967,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -41589,11 +42101,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -41742,11 +42262,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -42578,11 +43106,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -42678,11 +43214,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -42905,11 +43449,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -43058,11 +43610,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -43225,11 +43785,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -43348,11 +43916,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -44193,11 +44769,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -44302,11 +44886,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -44485,11 +45077,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
@@ -44584,11 +45184,19 @@
        "add_price": 0
       },
       {
+       "name": "升級青花椒香麻沾醬(小)",
+       "add_price": 7
+      },
+      {
        "name": "升級南洋酸甜醬(大)",
        "add_price": 11
       },
       {
        "name": "升級BBQ煙燻醬(大)",
+       "add_price": 11
+      },
+      {
+       "name": "韓式辣醬",
        "add_price": 11
       }
      ]
